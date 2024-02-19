@@ -1,6 +1,8 @@
 #include <stdio.h>
-/*
- * fonction qui affiche en utilisant puts 
+/**
+  *main - entry point
+  *
+  *Return: 0 after printing the function
  */
 int main(void) 
    {
