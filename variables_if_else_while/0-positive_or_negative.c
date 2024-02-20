@@ -1,6 +1,6 @@
+#include <stlib.h>
 #include <stdio.h>
 #include <time.h>
-#include <stlib.h>
 /*This program will assign a random number to the variable n
  *
  * and print whether the number stored in the variable n is positive or negative
