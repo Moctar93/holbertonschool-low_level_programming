@@ -6,15 +6,15 @@
 
 int main(void)
 {
-	char hexa;
+	char i;
 
-	for (hexa = '1'; hexa <= '9'; ++hexa)
+	for (i = '1'; i <= '9'; ++i)
 	{
-		putchar(hexa);
+		putchar(i);
 	}
-	for (hexa = 'a'; hexa <= 'f'; ++hexa)
+	for (i = 'a'; i <= 'f'; ++i)
 		{
-		putchar(hexa);
+		putchar(i);
 		}
 
 	putchar('\n');
