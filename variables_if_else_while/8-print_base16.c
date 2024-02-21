@@ -16,6 +16,7 @@ int main(void)
 		{
 		putchar(hexa_decimal);
 		}
+
 	putchar('\n');
 	return (0);
 }
