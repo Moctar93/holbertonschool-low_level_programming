@@ -2,6 +2,7 @@
 
 /**
  *print_most_numbers - prints 0 to 9 except 2 and 4
+ *return: always 0
  */
 
 void print_most_numbers(void)
@@ -15,5 +16,6 @@ void print_most_numbers(void)
 			_putchar(i);
 		}
 	}
+	_putchar('\n');
 }
 
