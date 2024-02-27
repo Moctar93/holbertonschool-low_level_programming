@@ -4,7 +4,7 @@
  *main - Fizz-Buzz program
  *Return: Always 0
  */
-int main()
+int main(void)
 {
 	int num;
 
@@ -28,5 +28,5 @@ int main()
 		}
 	}
 	printf("\n");
-	return ('0');
+	return (0);
 }
