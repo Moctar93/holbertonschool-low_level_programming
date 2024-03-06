@@ -1,24 +1,24 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * _strncpy - copies a string
- * @dest: string 1
- * @src: string 2
- * @n: inpout value
+ * _strchr - locates a character c in the string s or NULL if not found
+ * @s: pointer to string
+ * @c: chararcter to found
  *
- * Return: dest
+ * Return: Pointer the first occurence to character c in string s or NULL.
  */
-char *_strncpy(char *dest, char *src, int n)
+char *_strchr(char *s, char c)
 {
-	int i;
-
-	for (i = 0; i < n && src[i] != '\0'; i++)
+	while (*s != '\0' && *s != c)
 	{
-		dest[i] = src[i];
+		s++;
 	}
-	for ( ; i < n; i++)
+	if (*s == c)
 	{
-		dest[i] = '\0';
+		return (s);
 	}
-	return (dest);
+	else
+	{
+		return (NULL);
+	}
 }
