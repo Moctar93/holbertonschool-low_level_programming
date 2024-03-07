@@ -13,6 +13,7 @@ int squareRootSearch(int i, int j, int n)
 {
 	int mid;
 	int square;
+
 	if (i > j)
 	{
 		return (-1);
