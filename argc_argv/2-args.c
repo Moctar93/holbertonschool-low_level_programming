@@ -1,13 +1,21 @@
 #include <stdio.h>
 /**
  * main - Entry point main
- * @argc: the number of a argument in the command line
- * @argv: a pointer containt the array content the string
+ * @argc: the number of argument
+ * @argv: the vector argument or the pointer containt array of argument
  *
  * Return: int
  */
-int main(int argc, char *argv[] __attribute__((unused)))
+int main(int argc, char *argv[])
 {
-	printf("%d\n", argc - 1);
+	int i;
+
+	if (argc > 0)
+	{
+		for (i = 0; i < argc; i++)
+		{
+			printf("%s\n", argv[i]);
+		}
+	}
 	return (0);
 }
