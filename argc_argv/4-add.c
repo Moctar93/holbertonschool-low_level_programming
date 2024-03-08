@@ -14,6 +14,7 @@ int main(int argc, char *argv[])
 	int sum = 0;
 	int number = 0;
 	int found = 0;
+
 	if (argc <= 1)
 	{
 		printf("0\n");
