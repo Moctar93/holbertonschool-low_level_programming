@@ -6,8 +6,7 @@
  * at the end of a list_t list.
  * @head: pointer to a pointer of type "list_t"
  * @str: pointer to a constant character (string)
- *
- * Return: the address of the new element, or NULL if it failed
+ * Return: address of new element or NULL if it failed
  */
 list_t *add_node_end(list_t **head, const char *str)
 {
