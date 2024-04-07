@@ -21,18 +21,15 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	{
 		return (0);
 	}
-
-	
 	if (file_descriptor == -1)
 	{
 		return (0);
 	}
-
-	buffer = (char *)malloc(sizeof(char) *(letters + 1));
-	if (buffer ==NULL)
+	buffer = (char *)malloc(sizeof(char) * (letters + 1));
+	if (buffer == NULL)
 	{
 		close(file_descriptor);
-		return(0);
+		return (0);
 	}
 
 	bytes_read = read(file_descriptor, buffer, letters);
@@ -40,7 +37,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	{
 		close(file_descriptor);
 		free(buffer);
-		return(0);
+		return (0);
 	}
 
 	bytes_written = write(STDOUT_FILENO, buffer, bytes_read);
@@ -50,9 +47,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		free(buffer);
 		return (0);
 	}
-
 	close(file_descriptor);
 	free(buffer);
-
 	return (bytes_written);
 }
